@@ -13,6 +13,6 @@ interface GameDAO {
     @Query("SELECT * FROM Games WHERE seasonID = :seasonID ORDER BY date ASC")
     fun getGamesForSeason(seasonID: Int): LiveData<List<Game>>
 
-    @Query("SELECT SUM(hits) * 1.0 / SUM(atBats) FROM Games WHERE seasonID=  :seasonID")
+    @Query("SELECT SUM(ABhits) * 1.0 / SUM(ABatBats) FROM Games WHERE seasonID=  :seasonID")
     fun getBattingAverage(seasonID: Int): LiveData<Double>
 }

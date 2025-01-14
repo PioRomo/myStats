@@ -3,31 +3,31 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button_create_season"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_text_season_year"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create New Season"
+        android:hint="Enter season year"
+        android:inputType="text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.925"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintVertical_bias="0.088" />
 
     <Button
-        android:id="@+id/button_view_seasons"
+        android:id="@+id/button_save_season"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="View Seasons"
+        android:text="Save Season"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_season_year"
+        app:layout_constraintVertical_bias="0.149" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
